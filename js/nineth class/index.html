@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #mainDiv {
+        background-color: grey;
+        height: 100vh;
+        padding: 20px;
+      }
+      button {
+        padding: 10px;
+        background-color: royalblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainDiv">
+      <h1 id="result"></h1>
+      <br />
+      <button onclick="getDate(true, 'Current Date')">
+        display current date
+      </button>
+      <button onclick="getDate(false, 'User Date')">display user date</button>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
